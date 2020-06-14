@@ -1,0 +1,18 @@
+@import "partials/variables";
+@import "partials/fonts";
+@import "partials/preview";
+@import "partials/technologies";
+@import "partials/stir";
+@import "partials/programs";
+@import "partials/advantages";
+@import "partials/self-clean";
+@import "partials/cup";
+@import "partials/recipe";
+@import "partials/overview";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $main-font;
+}

@@ -1,0 +1,47 @@
+.self-clean {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('../../img/self-clean-bc.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+
+    &__title {
+        color: $white-color;
+        font-size: 51px;
+        text-transform: uppercase;
+        display: inline-flex;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+    }
+
+    &__content {
+        display: flex;
+        padding: 110px 100px;
+        align-items: center;
+    }
+
+    &__text_box {
+        padding-right: 120px;
+        box-sizing: border-box;
+    }
+
+    &__text_caption {
+        font-size: 29px;
+        text-transform: uppercase;
+        color: $red-color-text;
+        font-family: $main-font-bold;
+        padding-bottom: 40px;
+    }
+
+    &__text {
+        color: $white-color;
+        font-size: 29px;
+        text-transform: uppercase;
+        list-style: none;
+        font-family: $main-font-light;
+    }
+}

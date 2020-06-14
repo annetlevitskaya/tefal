@@ -1,0 +1,61 @@
+.technologies {
+    background-image: url('../../img/technologies-bc.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    padding: 48px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__title {
+        display: inline-flex;
+        color: $white-color;
+        font-size: 51px;
+        font-weight: 700;  
+        text-transform: uppercase;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+    }
+
+    &__subtitle {
+        color: $red-color-text;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-top: 20px;
+        font-family: $main-font-medium;
+    } 
+    
+    &__content {
+        display: flex;
+        padding: 83px 0 0 0;
+    }
+
+    &__slider {
+        margin-left: -5px;
+        margin-top: -232px;
+    }
+
+    &__text_box {
+        padding-left: 70px;
+    }
+
+    &__text_caption {
+        color: $red-color-text;
+        font-family: $main-font-bold;
+        font-size: 39px;
+        text-transform: uppercase;  
+        padding-bottom: 30px;
+    }
+
+    &__text {
+        color: $white-color;
+        font-size: 29px;
+        font-weight: 400;
+        text-transform: uppercase;  
+        font-family: $main-font-light;
+    }
+}

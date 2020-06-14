@@ -1,0 +1,99 @@
+.advantages {
+    padding: 45px 0 0 0;
+    background-color: $advantages-color;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    &__desk {
+        position: absolute;
+        top: -153px;
+    }
+
+    &__title {
+        position: relative;
+        color: $white-color;
+        font-size: 51px;
+        text-transform: uppercase;
+        text-align: center;
+        display: inline-flex;
+        margin: 0 auto;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: center;
+        padding-top: 110px;
+        padding-bottom: 75px;
+        z-index: 2;
+    }
+
+    &__item {
+        width: 238px;
+        height: 297px;
+        border-radius: 6px;
+        background-color: #0000008f;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__item_img {
+        margin: auto;
+    }
+
+    &__item_text {
+        color: $white-color;
+        font-size: 16px;
+        text-transform: uppercase;
+        height: 80px;
+        padding: 5px 13px;
+    }
+
+    &__btn {
+        position: relative;
+        color: $white-color;
+        font-size: 19px;
+        text-transform: uppercase;
+        border-radius: 7px;
+        background-color: $red-color-text;
+        border: none;
+        min-width: 162px;
+        padding: 3px 10px 3px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        font-family: $main-font-light;
+        text-align: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 65px;
+    }
+
+    &__btn-icon {
+        box-sizing: border-box;
+        height: 18px;
+        width: 18px;
+        border: 1px solid $white-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        position: relative;
+        margin-left: 10px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 6px;
+            border: 4px solid transparent;
+            border-left: 7px solid #fff;
+        }
+    }
+}

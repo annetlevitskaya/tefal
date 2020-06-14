@@ -1,0 +1,49 @@
+.programs {
+    background-color: $white-color;
+    padding: 30px 0 25px 0;
+
+    &__title {
+        color: $red-color-text;
+        font-size: 51px;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: $main-font-medium;
+        padding-bottom: 55px;
+    }
+
+    &__text_line {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 100px;
+    }
+
+    &__text_caption {
+        color: $red-color-text;
+        font-size: 29px;
+        font-family: $main-font-medium;
+        text-transform: uppercase;
+        padding-bottom: 45px;
+        min-height: 85px;
+    }
+
+    &__text {
+        color: #3b3b3b;
+        font-size: 17px;
+        text-transform: uppercase;
+        display: inline-block;
+        position: relative;
+        z-index: 3;
+    }
+
+    &__text_box--automatically {
+        width: 354px;
+    }
+
+    &__text_box--stir {
+        width: 430px;
+    }
+
+    &__text_box--without-spoon {
+        width: 390px;
+    }
+}

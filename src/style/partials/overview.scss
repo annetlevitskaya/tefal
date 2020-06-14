@@ -1,0 +1,28 @@
+.overview {
+    position: relative;
+
+    &__img {
+        width: 100%;
+        // position: relative;
+    }
+
+    &__btn {
+        width: 136px;
+        height: 136px;
+        background-color: #ffffff47;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        top: 42%;
+        right: 45%;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 50px;
+            border: 40px solid transparent;
+            border-left: 60px solid #ff0000;
+            top: 28px;
+        }
+    }
+}

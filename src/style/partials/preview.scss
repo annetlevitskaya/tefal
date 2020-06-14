@@ -1,0 +1,93 @@
+.with-title-borders::after,
+.with-title-borders::before {
+    content: '';
+    position: absolute;
+    width: 93px;
+    height: 24px;
+    box-sizing: border-box;
+}
+
+.with-title-borders:before {
+    top: -10px;
+    border-top: 9px solid $red-color;
+    border-left: 4px solid $red-color;
+    border-top-left-radius: 8px;
+    left: -10px;
+}
+
+.with-title-borders:after {
+    bottom: -10px;
+    border-bottom: 9px solid $red-color;
+    border-right: 4px solid $red-color;
+    border-bottom-right-radius: 8px;
+    right: -10px;
+    left: auto;
+}
+
+
+/* preview section */
+
+.preview {
+    background-image: url('../../img/preview-bc.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 55px 0 30px 0;
+    height: 730px;
+    box-sizing: border-box;
+
+    &__logo {
+        margin: 0 auto;
+        display: block;
+        padding-bottom: 50px;
+    }
+
+    &__title {
+        width: 520px;
+        color: $white-color;
+        font-size: 27px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__dishes {
+        width: 100%;
+        position: relative;
+    }
+
+    &__dish {
+        position: absolute;
+    }
+
+    &__dish--inside {
+        left: 55px;
+        top: -209px;
+    }
+
+
+    &__dish--multicook {
+        left: 338px;
+        top: 71px;
+    }
+
+    &__dish--diner {
+        right: 27px;
+        top: 241px;
+    }
+
+    &__dish--stew {
+        right: 350px;
+        top: 175px;
+    }
+
+    &__dish--breakfast {
+        z-index: 2;
+        right: 359px;
+        top: 296px;
+    }
+}

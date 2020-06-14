@@ -1,0 +1,13 @@
+.cup {
+    background-color: $white-color;
+    display: flex;
+    padding: 35px 50px;
+    align-items: center;
+
+    &__text {
+        color: $light-black-color;
+        font-size: 22px;
+        text-transform: uppercase;
+        padding-right: 75px;
+    }
+}
