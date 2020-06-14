@@ -3,7 +3,6 @@
 
     &__img {
         width: 100%;
-        // position: relative;
     }
 
     &__btn {
@@ -13,16 +12,33 @@
         border-radius: 50%;
         border: none;
         position: absolute;
-        top: 42%;
-        right: 45%;
+        top: calc(50% - 136px / 2);
+        right: calc(50% - 136px / 2);
+        cursor: pointer;
 
         &::after {
             content: '';
             position: absolute;
             left: 50px;
             border: 40px solid transparent;
-            border-left: 60px solid #ff0000;
+            border-left: 60px solid $new-circle-color;
             top: 28px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .overview__btn {
+        width: 100px;
+        height: 100px;
+        top: calc(50% - 100px / 2);
+        right: calc(50% - 100px / 2);
+
+        &::after {
+            border: 30px solid transparent;
+            border-left: 45px solid red;
+            left: 37px;
+            top: 22px;
         }
     }
 }

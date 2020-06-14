@@ -1,34 +1,5 @@
-.with-title-borders::after,
-.with-title-borders::before {
-    content: '';
-    position: absolute;
-    width: 93px;
-    height: 24px;
-    box-sizing: border-box;
-}
-
-.with-title-borders:before {
-    top: -10px;
-    border-top: 9px solid $red-color;
-    border-left: 4px solid $red-color;
-    border-top-left-radius: 8px;
-    left: -10px;
-}
-
-.with-title-borders:after {
-    bottom: -10px;
-    border-bottom: 9px solid $red-color;
-    border-right: 4px solid $red-color;
-    border-bottom-right-radius: 8px;
-    right: -10px;
-    left: auto;
-}
-
-
-/* preview section */
-
 .preview {
-    background-image: url('../../img/preview-bc.png');
+    background-image: url('../../img/preview-bg.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,7 +11,7 @@
     &__logo {
         margin: 0 auto;
         display: block;
-        padding-bottom: 50px;
+        padding-bottom: 45px;
     }
 
     &__title {
@@ -55,39 +26,182 @@
         z-index: 2;
     }
 
-    &__dishes {
+    &__dish-list {
         width: 100%;
         position: relative;
     }
 
     &__dish {
         position: absolute;
+
+        &--inside {
+            left: 83px;
+            top: -190px;
+        }
+        &--multicook {
+            left: 366px;
+            top: 90px;
+        }
+        &--diner {
+            right: 60px;
+            top: 260px;
+        }
+        &--stew {
+            right: 381px;
+            top: 194px;
+        }
+        &--breakfast {
+            z-index: 2;
+            right: 391px;
+            top: 316px;
+        }
     }
+}
 
-    &__dish--inside {
-        left: 55px;
-        top: -209px;
+@media screen and (max-width: 1360px) {
+    .preview {
+        &__dish--inside {
+            left: 34px;
+            top: -181px;
+            width: 500px;
+        }
+
+        &__dish--multicook {
+            left: 298px;
+            top: 70px;
+            width: 469px;
+        }
+
+        &__dish--diner {
+            right: 38px;
+            top: 243px;
+            width: 320px;
+        }
+
+        &__dish--breakfast {
+            right: 356px;
+            top: 307px;
+            width: 250px;
+        }
+
+        &__dish--stew {
+            right: 320px;
+            top: 210px;
+            width: 200px;
+        }
     }
+}
 
+@media screen and (max-width: 1200px) {
+    .preview {
+        padding: 55px 0 0 0;
 
-    &__dish--multicook {
-        left: 338px;
-        top: 71px;
+        &__logo {
+            width: 500px;
+            padding-bottom: 35px;
+        }
+
+        &__title {
+            font-size: 25px;
+        }
+
+        &__dish--inside {
+            left: 19px;
+            top: -141px;
+            width: 470px;
+        }
+
+        &__dish--multicook {
+            left: 250px;
+            top: 82px;
+            width: 429px;
+        }
+
+        &__dish--diner {
+            right: 18px;
+            top: 243px;
+            width: 300px;
+        }
+
+        &__dish--breakfast {
+            right: 321px;
+            top: 299px;
+            width: 230px;
+        }
+
+        &__dish--stew {
+            right: 303px;
+            top: 210px;
+            width: 180px;
+        }
     }
+}
 
-    &__dish--diner {
-        right: 27px;
-        top: 241px;
+@media screen and (max-width: 1120px) {
+    .preview {
+        height: 630px;
+
+        &__dish--inside {
+            left: -8px;
+            top: -171px;
+            width: 430px;
+        }
+
+        &__dish--multicook {
+            left: 209px;
+            top: 42px;
+            width: 400px;
+        }
+
+        &__dish--diner {
+            right: 18px;
+            top: 214px;
+            width: 280px;
+        }
+
+        &__dish--breakfast {
+            right: 292px;
+            top: 249px;
+            width: 210px;
+        }
+
+        &__dish--stew {
+            right: 248px;
+            top: 163px;
+            width: 180px;
+        }
     }
+}
 
-    &__dish--stew {
-        right: 350px;
-        top: 175px;
-    }
 
-    &__dish--breakfast {
-        z-index: 2;
-        right: 359px;
-        top: 296px;
+@media screen and (max-width: 860px) {
+    .preview {
+        &__logo {
+            width: 400px;
+        }
+        &__title {
+            font-size: 20px;
+            width: 400px;
+        }
+        &__dish--inside {
+            width: 360px;
+            top: -120px;
+            left: 40px;
+        }
+        &__dish--stew {
+            right: 350px;
+            top: 260px;
+            width: 160px;
+        }
+        &__dish--breakfast {
+            top: 340px;
+            right: 230px;
+            width: 180px;
+        }
+        &__dish--diner {
+            top: 280px;
+            right: 10px;
+            width: 240px;
+        }
     }
 }

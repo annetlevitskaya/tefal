@@ -1,0 +1,74 @@
+body {
+    font-family: $main-font;
+}
+
+.with-title-borders::after,
+.with-title-borders::before {
+    content: '';
+    position: absolute;
+    width: 93px;
+    height: 24px;
+    box-sizing: border-box;
+}
+
+.with-title-borders:before {
+    top: -15px;
+    border-top: 9px solid $red-color;
+    border-left: 4px solid $red-color;
+    border-top-left-radius: 8px;
+    left: -15px;
+}
+
+.with-title-borders:after {
+    bottom: -15px;
+    border-bottom: 9px solid $red-color;
+    border-right: 4px solid $red-color;
+    border-bottom-right-radius: 8px;
+    right: -10px;
+    left: auto;
+}
+
+.tefal-title {
+    position: relative;
+    color: $white-color;
+    font-size: 51px;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-flex;
+    margin: 0 auto;
+    font-family: $main-font-medium;
+    line-height: 60px;
+}
+
+@media screen and (max-width: 1360px) {
+    .tefal-title {
+        font-size: 47px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .with-title-borders::after, 
+    .with-title-borders::before {
+        width: 75px;
+        height: 22px;
+    }
+
+    .tefal-title {
+        font-size: 43px;
+        line-height: 55px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .tefal-title {
+        font-size: 38px;
+        line-height: 52px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .tefal-title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}

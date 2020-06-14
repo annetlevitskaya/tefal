@@ -1,0 +1,120 @@
+.slider {
+    display: flex;
+    padding: 43px 0 0 0;
+
+    &__img {
+        margin: -207px 55px 0 -5px;
+    }
+
+    &__text {
+        padding-left: 70px;
+    }
+
+    &__title {
+        color: $red-color-text;
+        font-family: $main-font-bold;
+        font-size: 39px;
+        text-transform: uppercase;  
+    }
+
+    &__description {
+        color: $white-color;
+        font-size: 29px;
+        line-height: 31px;
+        font-weight: 400;
+        text-transform: uppercase;  
+        font-family: $main-font-light;
+        display: block;
+        padding-top: 21px;
+        letter-spacing: 0.6px;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .slider {
+        &__img {
+            width: 600px;
+        }
+
+        &__text {
+            padding-left: 50px;
+        }
+
+        &__title {
+            font-size: 35px;
+        }
+
+        &__description {
+            font-size: 26px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .slider {
+        &__img {
+            width: 530px;
+        }
+
+        &__title {
+            font-size: 31px;
+        }
+
+        &__description {
+            font-size: 23px;
+            line-height: 27px;
+        }
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .slider {
+        &__title {
+            font-size: 28px;
+        }
+
+        &__text {
+            padding-left: 20px;
+        }
+
+        &__description {
+            font-size: 21px;
+            line-height: 24px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .slider {
+        &__img {
+            width: 460px;
+        }
+        &__title {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        &__description {
+            font-size: 14px;
+            line-height: 21px;
+            padding-right: 20px;
+        }    
+    }
+}
+@media screen and (max-width: 860px) {
+    .slider {
+        &__img {
+            width: 320px;
+            margin-right: 20px;
+            margin-top: -118px;
+        }
+        &__title {
+            font-size: 18px;
+            line-height: 20px;        
+        }
+        &__description {
+            font-size: 13px;
+            line-height: 18px;
+        }    
+    }
+}
