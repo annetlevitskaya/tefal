@@ -72,3 +72,32 @@ body {
         line-height: 36px;
     }
 }
+
+@media screen and (max-width: 640px) {
+    .tefal-title {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .with-title-borders::after,
+    .with-title-borders::before {
+        width: 46px;
+        height: 18px;
+        border-bottom-width: 6px;
+        border-right-width: 2px;
+        border-top-width: 6px;
+        border-left-width: 2px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .tefal-title {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .with-title-borders::after,
+    .with-title-borders::before {
+        display: none;
+    }
+}

@@ -205,3 +205,62 @@
         }
     }
 }
+
+
+@media screen and (max-width: 640px) {
+    .preview {
+        height: 540px;
+
+        &__dish--inside {
+            width: 220px;
+            top: -30px;
+        }
+        &__dish--multicook {
+            left: 100px;
+            top: 32px;
+            width: 300px;
+        }
+        &__dish--stew {
+            right: 270px;
+            top: 200px;
+            width: 120px;
+        }
+        &__dish--diner {
+            top: 230px;
+            right: 10px;
+            width: 200px;
+        }
+        &__dish--breakfast {
+            top: 260px;
+            right: 190px;
+            width: 160px;
+        }
+    }
+}
+@media screen and (max-width: 320px) {
+    .preview {
+        height: 500px;
+
+        &__logo {
+            width: 280px;
+        }
+
+        &__title {
+            font-size: 18px;
+            width: 100%;
+            line-height: 22px;
+        }
+
+        &__dish--inside,
+        &__dish--stew,
+        &__dish--diner,
+        &__dish--breakfast {
+            display: none;
+        }
+        &__dish--multicook {
+            left: 0;
+            top: 40px;
+            width: 300px;
+        }
+    }
+}

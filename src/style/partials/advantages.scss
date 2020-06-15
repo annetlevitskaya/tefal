@@ -208,3 +208,37 @@
         }
     }
 }
+@media screen and (max-width: 640px) {
+    .advantages {
+        &__desk {
+            width: 300px;
+            left: -50px;
+            top: -60px;
+        }
+        &__list {
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+        }
+
+        &__item {
+            width: 80%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        &__item_img {
+            height: 128px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            width: auto;
+        }
+        &__item_text {
+            font-size: 12px;
+            line-height: 16px;
+            height: auto;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+    }
+}

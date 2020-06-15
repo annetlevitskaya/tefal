@@ -205,3 +205,72 @@
         }
     }
 }
+@media screen and (max-width: 640px) {
+    .stir {
+        background-size: cover;
+        background-position-y: -3px;    
+
+        &__content {
+            flex-direction: column-reverse;
+        }
+        &__circle {
+            &--spoon {
+                left: 130px;
+                top: 0px;
+            }
+            &--wash {
+                right: 100px;
+                top: 30px;
+            }
+            &--multicook {
+                right: 100px;
+                bottom: 130px;
+            }
+        }
+        &__content_text {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding-top: 20px;
+        }
+        &__text_box {
+            left: 30px;
+        }
+    }
+}
+@media screen and (max-width: 320px) {
+    .stir {
+        &__subtitle {
+            font-size: 14px;
+            padding-top: 18px;
+        }
+        &__text_box {
+            width: 80%;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        &__circle {
+            &--spoon {
+                left: 130px;
+                top: 0px;
+            }
+            &--wash {
+                right: 100px;
+                top: 30px;
+            }
+            &--multicook {
+                right: 100px;
+                bottom: 130px;
+            }
+        }
+        &__content_text {
+            padding-top: 14px;
+        }
+        &__text_box {
+            left: 30px;
+        }
+    }
+}
